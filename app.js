@@ -7,8 +7,12 @@ const app = express();
 
 app.set('viewengine','ejs');   // Seteo el motor de plantillas ejs
 
-app.use(express.static(path.resolve(__dirname, './publica')));
-app.use(express.static(path.resolve(__dirname, './vistas')));
+app.use(express.static(path.resolve(__dirname,'./publica')));
+app.use(express.static(path.resolve(__dirname,'./vistas')));
+
+app.get('/', (req,res)=>{
+  res.sendFile(__dirname + '/vistas/Home.html')//enviando la visual del home provisoriamente
+})
 
 //app.use(session( {secret: "Este es mi secreto"} ));    // para definir que vas a utilizar información en sesión
 
