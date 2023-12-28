@@ -1,8 +1,28 @@
+body{
+    width: 100vw;
+    background-color:black;
+}
 h1{
     font-size: 30px;
     color: firebrick;
+}
+.imagen-fondo-home{
+    width: 100vw;
+}
+/*Header*/
+.logo-header{
+    width: 100px;
+    height: 100px;
+}
+.titulo-header{
+    color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+
 }
 .logo-footer{
     width: 300px;
     height: 300px;
 }
+
